@@ -1,0 +1,151 @@
+/* import "./reset.css"; */
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.values {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #85a9de;
+}
+
+.values__list__holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.values__list__each {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.values__each__media {
+  width: 100%;
+  height: 100%;
+}
+
+.values__each__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.values__each__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  background: #587cce;
+  border-radius: 1rem;
+  color: #101a4d;
+}
+
+.values__each__info p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.info__text__top {
+  display: flex;
+  align-items: center;
+  padding: 5rem 3rem;
+  gap: 1rem;
+}
+
+.info__text__top h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.info__text__bottom {
+  padding: 5rem 3rem 5rem 7.5rem;
+}
+
+.index {
+  border: 1px solid #85a9de;
+  border-radius: 50%;
+  padding: 1rem 1.4rem;
+  font-size: 1rem;
+}
+
+/* _________________________ desk */
+@media only screen and (min-width: 1025px) {
+  .values__list__each {
+    flex-direction: row;
+    flex: 1 1 auto;
+    padding: 0;
+  }
+
+  .values__list__each:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .values__each__media {
+    padding: 0;
+  }
+
+  .values__each__info {
+    padding: 0;
+  }
+
+  .info__text__top {
+    display: flex;
+    align-items: center;
+    padding: 5rem 10rem;
+    gap: 1rem;
+  }
+
+  .info__text__top h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .info__text__bottom {
+    padding: 5rem 10rem 5rem 14rem;
+  }
+
+  .index {
+    border: 1px solid #85a9de;
+    border-radius: 50%;
+    padding: 1rem 1.4rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* _________________________ tablet */
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  .info__text__top {
+    display: flex;
+    align-items: center;
+    padding: 5rem 10rem;
+    gap: 1rem;
+  }
+
+  .info__text__top h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .values__each__info p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .info__text__bottom {
+    padding: 5rem 10rem 5rem 14rem;
+  }
+}
